@@ -3,12 +3,11 @@ library(datasets)
 library(ggplot2)
 library(multcompView)
 library(dplyr)
-if (!require(readxl)) install.packages("readxl")
-library(readxl)
 
-GABAergic <- read_xlsx("D:/baitapR/means_data.xlsx", sheet = "GABAergic")
-Glutamatergic <- read_xlsx("D:/baitapR/means_data.xlsx", sheet = "Glutamatergic")
-Nonneuronal <- read_xlsx("D:/baitapR/means_data.xlsx", sheet = "Nonneuronal")
+# Loading data
+GABAergic <- read.csv("D:/baitapR/GABA.csv")
+Glutamatergic <- read.csv("D:/baitapR/Glu.csv")
+Nonneuronal <- read.csv("D:/baitapR/Nonneuronal.csv")
 
 # Get data of 5 research genes
 ## NNAT
