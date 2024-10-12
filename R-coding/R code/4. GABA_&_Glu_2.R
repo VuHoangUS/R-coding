@@ -15,14 +15,6 @@ GABAergic2 <- read.csv("https://raw.githubusercontent.com/VuHoangUS/R-coding/ref
 Glutamatergic2 <- read.csv("https://raw.githubusercontent.com/VuHoangUS/R-coding/refs/heads/main/R-coding/Data/Glu2.csv")
 Nonneuronal2 <- read.csv("https://raw.githubusercontent.com/VuHoangUS/R-coding/refs/heads/main/R-coding/Data/Nonneuronal2.csv")
 
-write.csv(GABAergic, "D:/baitapR/GABA2.csv", row.names = FALSE)
-write.csv(Glutamatergic, "D:/baitapR/Glu2.csv", row.names = FALSE)
-write.csv(Nonneuronal, "D:/baitapR/Nonneuronal2.csv", row.names = FALSE)
-
-GABAergic <- read.csv("D:/baitapR/GABA2.csv")
-Glutamatergic <- read.csv("D:/baitapR/Glu2.csv")
-Nonneuronal <- read.csv("D:/baitapR/Nonneuronal2.csv")
-
 # Get data of 5 research genes 
 ## NNAT
 NNAT_GABA <- GABAergic2[3, ]
