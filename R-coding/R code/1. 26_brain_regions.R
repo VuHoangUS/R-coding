@@ -13,7 +13,7 @@ library(rcompanion)
 # Loading data
 row_data <- read.csv("https://raw.githubusercontent.com/VuHoangUS/R-coding/refs/heads/main/R-coding/Data/Rows.csv")
 columns_data <- read.csv("https://raw.githubusercontent.com/VuHoangUS/R-coding/refs/heads/main/R-coding/Data/Columns.csv")
-expression_data <- read.csv("https://raw.githubusercontent.com/VuHoangUS/R-coding/refs/heads/main/R-coding/Data/Expression.csv")
+expression_data <- read.csv("https://raw.githubusercontent.com/VuHoangUS/R-coding/refs/heads/main/R-coding/Data/Expression.csv", header = FALSE)
 
 # Remove the first column (header) of the expression_data
 expression_data <- expression_data[,-1]
